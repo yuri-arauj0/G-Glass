@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Informações - Google Glass</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="_css/estilo.css">
+        <link rel="stylesheet" href="_css/specs.css">
+
+        <!-- JAVASCRIPT -->
+        <script src="https://kit.fontawesome.com/04ba73e2d5.js" crossorigin="anonymous"></script>
+        <script src="_javascript/funcoes.js"></script>
+    </head>
+
+    <body>
+        <div id="interface">
+            <header id="cabecalho"> <!-- START OF HEADER -->
+                <hgroup>
+                    <h1>Google Glass</h1>
+                    <h2>A revolução do Google está chegando</h2>
+                </hgroup>
+                
+                <img id="icone" src="_imagens\especificacoes.png" alt="Imagem do Google Glass">
+
+                <nav id="menu"> <!-- START OF MENU -->
+                    <h1>Menu Principal</h1>
+                    
+                    <ul> <!-- START OF MENU LIST -->
+                        <a href="index.html" onmouseover="changePic('_imagens/home.png')" onmouseout="changePic('_imagens/especificacoes.png')"><li><i class="fas fa-home"></i> Home</li></a>
+
+                        <a href="specs.html" onmouseover="changePic('_imagens/especificacoes.png')" onmouseout="changePic('_imagens/especificacoes.png')"><li><i class="fas fa-glasses"></i> Especificações</li></a>
+                        
+                        <a href="fotos.html" onmouseover="changePic('_imagens/fotos.png')" onmouseout="changePic('_imagens/especificacoes.png')"><li><i class="far fa-image"></i> Fotos</li></a>
+                        
+                        <a href="multimidia.html" onmouseover="changePic('_imagens/multimidia.png')" onmouseout="changePic('_imagens/especificacoes.png')"><li><i class="fas fa-photo-video"></i> Multimídia</li></a>
+                        
+                        <a href="fale-conosco.html" onmouseover="changePic('_imagens/contato.png')" onmouseout="changePic('_imagens/especificacoes.png')"><li><i class="fas fa-headset"></i> Fale conosco</li></a>
+                    </ul> <!-- END OF MENU LIST -->
+                </nav> <!-- END OF MENU -->
+            </header> <!-- END OF HEADER -->
+
+            <section id="spec-sec">
+                <article id="main-news">
+                    <header id="article-header"> <!-- START OF ARTICLE HEADER -->
+                        <hgroup>
+                            <h3>Glass > Especificações</h3>
+                            <h1>Raio-X no Google Glass</h1>
+                            <h2>por Yuri Araujo</h2>
+                            <h3 class="date">Atualizado em 21/11/2021</h3>
+                        </hgroup>
+                    </header> <!-- END OF ARTICLE HEADER -->
+
+                    <p>Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.</p>
+
+                    <section id="content">
+                        <img src="_imagens/glass-esquema-marcado.jpg" usemap="#img-map" alt="Imagem com as seções do óculos demarcada">
+
+                        <map name="img-map">
+                            <area shape="rect" coords="179,202,270,260" href="google-glass.html#screen" target="window"> <!-- x,y lateral superior esquerda, x,y lateral inferior direita -->
+                            
+                            <area shape="circle" coords="158,243,12" href="google-glass.html#camera" target="window"> <!-- ponto central e raio -->
+
+                            <area shape="circle" coords="73,52,12" href="google-glass.html#gadgets" target="window"> <!-- x,y do centro e raio -->
+
+                            <area shape="poly" coords="28,143,83,216,84,249,27,169," href="google-glass.html#sensors" target="window"> <!-- faz o primeiro ponto e segue no sentido horário -->
+                        </map>
+                        
+                        <iframe src="google-glass.html" name="window" scrolling="no" id="frame-spec"></iframe>
+                    </section>
+
+                </article>
+            </section>
+
+            <footer id="foot">
+                <p>Copyright &copy; 2021 - by Yuri Araujo</p>
+                
+                <p id="social">
+                    <a id="face" href="https://www.facebook.com/yuri.araujo.3386" target="_blank">
+                        <i class="fab fa-facebook-square"></i>
+                        Facebook
+                    </a>
+                    
+                    <a id="tt" href="https://twitter.com/gordo0904" target="_blank">
+                        <i class="fab fa-twitter-square"></i>
+                        Twitter
+                    </a>
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Fale Conosco - Encomende seu Google Glass</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="_css/estilo.css">
+        <link rel="stylesheet" href="_css/form.css">
+
+        <!-- JAVASCRIPT -->
+        <script src="https://kit.fontawesome.com/04ba73e2d5.js" crossorigin="anonymous"></script>
+        <script src="_javascript/funcoes.js"></script>
+    </head>
+
+    <body>
+        <div id="interface">
+            <header id="cabecalho"> <!-- START OF HEADER -->
+                <hgroup>
+                    <h1>Google Glass</h1>
+                    <h2>A revolução do Google está chegando</h2>
+                </hgroup>
+                
+                <img id="icone" src="_imagens\contato.png" alt="Imagem do Google Glass">
+
+                <nav id="menu"> <!-- START OF MENU -->
+                    <h1>Menu Principal</h1>
+                    
+                    <ul> <!-- START OF MENU LIST -->
+                        <a href="index.html" onmouseover="changePic('_imagens/home.png')" onmouseout="changePic('_imagens/contato.png')"><li><i class="fas fa-home"></i> Home</li></a>
+
+                        <a href="specs.html" onmouseover="changePic('_imagens/especificacoes.png')" onmouseout="changePic('_imagens/contato.png')"><li><i class="fas fa-glasses"></i> Especificações</li></a>
+                        
+                        <a href="fotos.html" onmouseover="changePic('_imagens/fotos.png')" onmouseout="changePic('_imagens/contato.png')"><li><i class="far fa-image"></i> Fotos</li></a>
+                        
+                        <a href="multimidia.html" onmouseover="changePic('_imagens/multimidia.png')" onmouseout="changePic('_imagens/contato.png')"><li><i class="fas fa-photo-video"></i> Multimídia</li></a>
+                        
+                        <a href="fale-conosco.html" onmouseover="changePic('_imagens/contato.png')" onmouseout="changePic('_imagens/contato.png')"><li><i class="fas fa-headset"></i> Fale conosco</li></a>
+                    </ul> <!-- END OF MENU LIST -->
+                </nav> <!-- END OF MENU -->
+            </header> <!-- END OF HEADER -->
+
+            <section id="contact-sec">
+                <article id="main-news">
+                    <header id="article-header"> <!-- START OF ARTICLE HEADER -->
+                        <hgroup>
+                            <h3>Fale Conosco > Contato</h3>
+                            <h1>Formulário de Contato</h1>
+                            <h2>por Yuri Araujo</h2>
+                            <h3 class="date">Atualizado em 30/11/2021</h3>
+                        </hgroup>
+                    </header> <!-- END OF ARTICLE HEADER -->
+
+                    <form method="post" id="contact-form" action="mailto:yuri.a2araujo@gmail.com" oninput="_calcTotal();">
+                        <fieldset id="user"> <!-- USER ID -->
+                            <legend>User ID</legend>
+                            <!-- t = text / f = field -->
+                            <p>
+                                <label for="f-name">Name: </label>
+                                <input type="text" name="t-name" id="f-name" size="20" maxlength="30" placeholder="Full name">
+                            </p>
+                            
+                            <p>
+                                <label for="f-password">Password: </label>
+                                <input type="password" name="t-password" id="f-password" size="20" maxlength="10" placeholder="Password">
+                            </p>
+                            
+                            <p>
+                                <label for="f-mail">E-mail: </label>
+                                <input type="email" name="t-mail" id="f-mail" size="20" maxlength="40" placeholder="example@example.com">
+                            </p>
+                            
+                            <fieldset id="sex">
+                                <legend>Sex:</legend>
+                                <!-- THE NAME MUST BE THE SAME -->
+                                <input type="radio" name="t-sex" id="f-male">
+                                <label for="f-male">Masculino</label>
+
+                                <br>
+
+                                <input type="radio" name="t-sex" id="f-female">
+                                <label for="f-female">Feminino</label>
+                            </fieldset>
+                                
+                            <p>
+                                <label for="f-date">Date of birth: </label>
+                                <input type="date" name="t-date" id="f-date">
+                            </p>
+                        </fieldset>
+
+                        <fieldset id="address"> <!-- ADDRESS -->
+                            <legend>Endereço do Usuário</legend> 
+                            <p>
+                                <label for="f-add">Address: </label>
+                                <input type="text" name="t-add" id="f-add">
+                            </p>
+
+                            <p>
+                                <label for="f-num">Number: </label>
+                                <input type="number" name="t-num" id="f-num" min="0" max="99999">
+                            </p>
+
+                            <p> <!-- STATES -->
+                                <label for="f-state">State: </label>
+                                <select name="t-state" id="f-state">
+                                    
+                                    <optgroup label="Sudeste"> <!-- SOUTHEAST -->
+                                        <option value="RJ">Rio de Janeiro</option>
+                                        <option value="ES">Espírito Santo</option>
+                                        <option value="MG">Minas Gerais</option>
+                                        <option value="SP">São Paulo</option>
+                                    </optgroup>
+
+                                    <optgroup label="Nordeste"> <!-- NORTHEAST -->
+                                        <option value="AL">Alagoas</option>
+                                        <option value="BA">Bahia</option>
+                                        <option value="CE">Ceará</option>
+                                        <option value="MA">Maranhão</option>
+                                        <option value="PB">Paraíba</option>
+                                        <option value="PE">Pernambuco</option>
+                                        <option value="PI">Piauí</option>
+                                        <option value="RN">Rio Grande do Norte</option>
+                                        <option value="SE">Sergipe</option>
+                                        <option value="TO">Tocantins</option>
+                                        
+                                    </optgroup>
+
+                                    <optgroup label="Norte"> <!-- NORTH -->
+                                        <option value="AC">Acre</option>
+                                        <option value="AP">Amapá</option>
+                                        <option value="AM">Amazonas</option>
+                                        <option value="PA">Pará</option>
+                                        <option value="RO">Rondônia</option>
+                                        <option value="RR">Roraima</option>
+                                    </optgroup>
+                                    
+                                    <optgroup label="Centro-Oeste"> <!-- MIDDLE -->
+                                        <option value="DF">Distrito Federal</option>
+                                        <option value="GO">Goiás</option>
+                                        <option value="MT">Mato Grosso</option>
+                                        <option value="MS">Mato Grosso do Sul</option>
+                                    </optgroup>
+                                    
+                                    <optgroup label="Sul"> <!-- SOUTH -->
+                                        <option value="PR">Paraná</option>
+                                        <option value="RS">Rio Grande do Sul</option>
+                                        <option value="SC">Santa Catarina</option>
+                                    </optgroup>                                    
+                                </select>
+                            </p>
+
+                            <p>
+                                <label for="f-city">City: </label>
+                                <input type="text" name="t-city" id="f-city" size="20" placeholder="Cidade" list="cidades">
+                            </p>
+                            
+                            <datalist id="cidades"> <!-- LEARN PHP TO DO THIS BETTER -->
+                                <option value="Rio de Janeiro"></option>
+                                <option value="Nilópolis"></option>
+                                <option value="São João de Meriti"></option>
+                                <option value="Niterói"></option>
+                                <option value="Nova Iguaçu"></option>
+                            </datalist>
+                        </fieldset>
+                        
+                        <fieldset id="msg"> <!-- MESSAGE -->
+                            <legend>Mensagem do Usuário</legend> 
+
+                            <p>
+                                <label for="f-urgency">Urgency degree: </label>
+                                Mín<input type="range" name="t-urgency" id="f-urgency" step="2" min="0" max="10">Máx
+                            </p>
+                            
+                            <p>
+                                <label for="f-message">Message</label> <br>
+                                <textarea name="t-message" id="f-message" cols="35" rows="5" placeholder="Deixe aqui sua mensagem"></textarea>
+                            </p>
+                        </fieldset>
+                        
+                        <fieldset id="order"> <!-- ORDER -->
+                            <legend>Quero um Google Glass</legend>
+
+                            <p>
+                                <input type="checkbox" name="t-order" id="f-order" checked>
+                                <label for="f-order">Quero adquirir um Google Glass quando disponível</label>
+                            </p>
+                            
+                            <p>
+                                <label for="f-color">Color: </label>
+                                <input type="color" name="t-color" id="f-color" value="#0000FF">
+                            </p>
+                            
+                            <p>
+                                <label for="">How many: </label>
+                                <input type="number" name="t-qtd" id="f-qtd" min="0" max="5" value="0">
+                            </p>
+
+                            <p>
+                                <label for="f-total">Preço total: US$</label>
+                                <input type="text" name="t-total" id="f-total" placeholder="Total a pagar" readonly>
+                            </p>
+                        </fieldset> 
+
+                        <input id="button" type="image" src="_imagens/botao-enviar.png" name="submit-btn">
+                    </form>
+                </article>
+            </section>
+
+            <footer id="foot">
+                <p>Copyright &copy; 2021 - by Yuri Araujo</p>
+                
+                <p id="social">
+                    <a id="face" href="https://www.facebook.com/yuri.araujo.3386" target="_blank">
+                        <i class="fab fa-facebook-square"></i> Facebook
+                    </a>
+                    <a id="tt" href="https://twitter.com/gordo0904" target="_blank">
+                        <i class="fab fa-twitter-square"></i> Twitter
+                    </a>
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>
