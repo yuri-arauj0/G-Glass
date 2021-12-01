@@ -1,0 +1,298 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Newsreader&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Gruppo&display=swap');
+
+/* IMPORT FONT FILE */
+/* @font-face {
+    font-family: 'MinhaFonte';
+    src: url('../_fonts/bubblegum-sans-regular.otf');
+} */
+
+/* Formatações gerais */
+body {
+    font-family: 'Newsreader', serif;
+    background-color: #dddddd;
+    /* abaixo -> cor da fonte */
+    color: rgba(0, 0, 0, 1);
+}
+
+div#interface {
+    width: 78%;
+    background-color: white;
+    /* cima direita baixo esquerda */
+    margin: -20px auto 0px auto ;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .3);
+    /* cima direita baixo esquerda */
+    padding: 10px 10px 10px 10px;
+}
+
+p {
+    text-align: justify;
+    text-indent: 30px;
+}
+
+a#g-project {
+    color: #606060;
+    text-decoration: none;
+}
+
+a#g-project:hover {
+    color: goldenrod;
+    text-decoration: underline;
+}
+
+/* Formatação dos cabeçalhos */
+header#cabecalho {
+    border-bottom: 1px #606060 solid;
+    height: 150px;
+    /* ponto ponto pra voltar uma pasta*/      /* deslocamento lateral e vertical*/
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 85px;
+}
+
+header#cabecalho h1 {
+    font-family: 'Comfortaa', cursive;
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+header#cabecalho h2 {
+    font-family: 'Gruppo', cursive;
+    font-size: 15pt;
+    color: #888888;
+    padding: 0px;
+    margin-top: 05px;
+}
+
+header#cabecalho img#icone {
+    position: absolute;
+    right: 8%;
+    /* left: 800px; */
+    top: 65px;
+}
+
+/* Formatação de imagens com legendas */
+figure.foto-legenda {
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;
+    position: relative;
+}
+
+figure.foto-legenda img {
+    width: 100%;
+    height: 100%;
+}
+
+figure.foto-legenda figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, .3);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 500ms;
+}
+
+figure.foto-legenda figcaption h3 a {
+    color: white;
+}
+
+figure.foto-legenda figcaption h3 a:hover {
+    color: goldenrod;
+}
+
+figure.foto-legenda:hover figcaption {
+    opacity: 1;
+}
+
+/* Formatação do menu */
+nav#menu {
+    /* block pode flutuar pela tela */
+    display: block;
+}
+
+nav#menu h1 {
+    display: none;
+}
+
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    /* abaixo: passar por cima dos elementos no doc inteiro */
+    position: absolute;
+    top: -20px;
+    right: 11%;
+}
+
+nav#menu li {
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 2px;
+    /* PREFIXES TO MAKE IT COMPATIBLE WITH OLDER BROWSERS */
+    -webkit-transition: background-color 350ms;
+    -o-transition: background-color 350ms;
+    transition: background-color 350ms;
+}
+
+nav#menu li:hover {
+    background-color: #606060;
+}
+
+nav#menu a {
+    color: black;
+    text-decoration: none;
+}
+
+nav#menu a:hover {
+    color: white;
+}
+
+/* Formatação do conteúdo */
+section#main-content {
+    display: block;
+    width: 60%;
+    float: left;
+    border-right: 1px solid #606060; /* expessura tipo cor*/
+    padding-right: 15px;
+}
+
+aside#side-content { /* TALVEZ MEXER NO FINAL!!!!! */
+    display: block;
+    width: 35%;
+    float: right;
+    padding-right: 1%;
+    background-color: #dddddd;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+}
+
+aside#side-content h1 {
+    font-family: 'Comfortaa', cursive;
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 0px;
+}
+
+aside#side-content h2 {
+    font-family: 'Gruppo', cursive;
+    font-size: 13pt;
+    color: white;
+    background-color: #606060;
+    padding: 5px;
+}
+
+footer {
+    clear: both;
+    border-top: 1px solid #606060; /* expessura tipo cor*/
+    margin-bottom: -10px;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer p a {
+    color: #606060;
+    text-decoration: none;
+    
+    text-align: center;
+}
+
+footer p a#face:hover {
+    color: darkblue;
+    text-decoration: none;
+}
+
+footer p a#tt:hover {
+    color: lightblue;
+    text-decoration: none;
+}
+
+/* Formatação de tabela */
+table#spec-table {
+    border: 1px solid #606060;
+    border-spacing: 0px; /* TIRA AI PRA VER */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table#spec-table td {
+    border: 2px solid white;
+    padding: 10px;
+    vertical-align: middle;
+    text-align: left;
+    background-color: #cecece;
+}
+
+table#spec-table td.one-col {
+    text-align: right;
+    color: white;
+    background-color: #606060;
+    font-weight: bold;
+}
+
+table#spec-table caption {
+    color: #888888;
+    font-size: 13pt;
+    font-weight: bolder;
+}
+
+table#spec-table caption span {
+    display: block;
+    float: right;
+    color: black;
+    font-size: 8pt;
+    margin-top: 8px;
+}
+
+/* Formatação do artigo */
+article#main-news h2 {
+    font-size: 13pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 5px;
+    margin: 10px 0px 10px 0px;
+}
+
+article#main-news header#article-header h1 {
+    font-family: 'Comfortaa', cursive;
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+article#main-news header#article-header h2 {
+    font-size: 13pt;
+    color: #cecece;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
+article#main-news header#article-header h3 {
+    font-size: 12px;
+    color: #606060;
+}
+
+.date {
+    text-align: right;
+}
+
+section#pic-sec article#main-news p {
+    width: 900px;
+    padding-left: 30px;
+}
+
+section#spec-sec article#main-news p {
+    width: 900px;
+    padding-left: 30px;
+}

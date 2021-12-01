@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+ul#albun-pics {
+    width: 700px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden;
+    list-style: none;
+}
+
+ul#albun-pics li {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 5px solid white;
+    background-color: white;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .4);
+    -webkit-transition: all 300ms ease-in;
+}
+
+ul#albun-pics li span {
+    opacity: 0;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    background-color: rgba(0, 0, 0, .3);
+    font-size: 10pt;
+    line-height: 380px;
+    padding: 5px;
+}
+
+ul#albun-pics li:hover span {
+    opacity: 1;
+}
+
+ul#albun-pics li:hover {
+    -webkit-transform: scale(1.5);
+}
+
+ul#albun-pics li#pic-1 {
+    background: url(../_imagens/galeria-01.jpg) no-repeat;
+    background-position: 50% 50%; /* lateral vertical */
+    background-size: 400px 400px; /* tamanho da imagem */
+    background-color: white;
+}
+
+ul#albun-pics li#pic-1:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px; /* zoom out */
+}
+
+ul#albun-pics li#pic-2 {
+    background: url(../_imagens/galeria-02.jpg) no-repeat;
+    background-position: 50% 50%; /* lateral vertical */
+    background-size: 400px 400px; /* tamanho da imagem */
+    background-color: white;
+}
+
+ul#albun-pics li#pic-2:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px; /* zoom out */
+}
+
+ul#albun-pics li#pic-3 {
+    background: url(../_imagens/galeria-03.jpg) no-repeat;
+    background-position: 50% 50%; /* lateral vertical */
+    background-size: 400px 400px; /* tamanho da imagem */
+    background-color: white;
+}
+
+ul#albun-pics li#pic-3:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px; /* zoom out */
+}
+
+ul#albun-pics li#pic-4 {
+    background: url(../_imagens/galeria-04.jpg) no-repeat;
+    background-position: 50% 50%; /* lateral vertical */
+    background-size: 400px 400px; /* tamanho da imagem */
+    background-color: white;
+}
+
+ul#albun-pics li#pic-4:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px; /* zoom out */
+}
+
+ul#albun-pics li#pic-5 {
+    background: url(../_imagens/galeria-05.jpg) no-repeat;
+    background-position: 50% 50%; /* lateral vertical */
+    background-size: 400px 400px; /* tamanho da imagem */
+    background-color: white;
+}
+
+ul#albun-pics li#pic-5:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px; /* zoom out */
+}
+
+ul#albun-pics li#pic-6 {
+    background: url(../_imagens/galeria-06.jpg) no-repeat;
+    background-position: 50% 50%; /* lateral vertical */
+    background-size: 400px 400px; /* tamanho da imagem */
+    background-color: white;
+}
+
+ul#albun-pics li#pic-6:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px; /* zoom out */
+}

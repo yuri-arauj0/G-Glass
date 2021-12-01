@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+form {
+    width: 500px;
+    margin: auto;
+}
+
+input, textarea {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 13pt;
+    background-color: rgba(255, 255, 255, .5);
+}
+
+input:hover, textarea:hover {
+    background-color: #dddddd;
+}
+
+legend {
+    color: #888888;
+    font-weight: bold;
+    font-size: 13pt;
+    font-family: sans-serif;
+}
+
+fieldset {
+    border-color: #cecece;
+    margin: 20px;
+}
+
+fieldset#sex {
+    width: 150px;
+}
+
+fieldset#user {
+    background: url('../_imagens/icone-contato.png') no-repeat 95% 95%; /* lateral vertical */
+}
+
+fieldset#address {
+    background: url('../_imagens/icone-endereco.png') no-repeat 95% 95%; /* lateral vertical */
+}
+
+fieldset#msg {
+    background: url('../_imagens/icone-mensagem.png') no-repeat 95% 95%; /* lateral vertical */
+}
+
+fieldset#order {
+    background: url('../_imagens/icone-pagamento.png') no-repeat 95% 95%; /* lateral vertical */
+}
+
+input#button {
+    margin-left: 15px;
+}
