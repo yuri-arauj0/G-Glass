@@ -1,2 +1,2 @@
-# project-g-glass
+# Project G-Glass
 Improving HTML skills
